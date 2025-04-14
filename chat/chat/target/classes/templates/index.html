@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ollama Chat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Ollama Chat Generator</h1>
+    <form id="ollamaForm">
+        <label for="model">Model:</label>
+        <input type="text" id="model" name="model" value="llama 3" required> <!-- Default value set here -->
+        <label for="prompt">Prompt:</label>
+        <textarea id="prompt" name="prompt" required></textarea>
+        <button type="submit">Generate</button>
+    </form>
+    <div id="responseContainer">
+        <h2>Response:</h2>
+        <pre id="response"></pre>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
